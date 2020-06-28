@@ -25,6 +25,10 @@ div {
   background-color: green;
 }
 
+.purple {
+  background-color: purple;
+}
+
 .invisible {
   display: none;
 }
