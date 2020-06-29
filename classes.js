@@ -9,6 +9,12 @@ function start () {
     
   // Your turn! Create a new function called `two`, then call it from here.
   two();
+
+  // Call function Three : Change background color to purple.
+  three();
+
+  // Make invisible objects visible
+  makeVisible();
 }
 
 function one () {
@@ -27,5 +33,18 @@ function two() {
   two.classList.add('green');
 }
 // CREATE FUNCTION three HERE
-
+function three(){
+  // Find the element
+  var two = document.getElementById('three');
+  // Apply CSS class
+  two.classList.add('purple');
+}
 // CREATE FUNCTION makeVisible HERE
+function makeVisible(){
+  // find objects with invisible class
+  var hidden = document.getElementsByClassName('invisible');
+  // Apply visible to all elements in returned array
+  for (i=0; i<hidden.length; i++){
+    hidden[i].classList.replace('invisible', 'visible');
+  }
+}
